@@ -1,0 +1,25 @@
+div{
+    background-color: tomato;
+    font-family: 'Jomhuria', cursive;
+    font-size: 14px;
+}
+div:hover{
+    background-color: seagreen;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    margin: 5px; 
+}
+#item, p{
+    color: red;
+    
+}
+
+div p{
+    background-color: wheat;
+    color: deeppink;
+}
+span{
+    background-color: white;
+}
