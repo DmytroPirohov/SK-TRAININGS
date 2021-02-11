@@ -1,0 +1,74 @@
+body{
+    background-color: bisque;
+}
+#box{
+    width: 200px;
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid black;
+}
+#first, #second, #third {
+border-width: 20px;
+border-style: solid;
+border-color: red;
+width: 150px;
+height: 150px;
+margin: 5px;
+}
+#second{
+    border-color: red yellow green blue;
+    border-radius: 50%;
+    position: relative;
+    top: 50px;
+    left: 10px;
+}
+#third{
+    width: 1px;
+height: 1px;
+border-color: red transparent green blue;
+position: relative;
+    top: 50px;
+    left: 100px;
+}
+div{
+    display: inline-block;
+}
+a[href] {
+    background-color: coral;
+}
+
+a[target=_blank] {
+    background-color: lightblue;
+}
+
+a[href$="pdf"]{
+    background-color: lightgreen;
+}
+
+a:hover{
+    background-color: hotpink;
+}
+
+h1::after{
+    content: " - Hello world!!!";
+}
+h1::first-letter{
+    color: red;
+}
+nav ul{
+    list-style: none;
+    background-color: khaki;
+}
+
+ul li{
+    display: inline-block;
+    border: 1px dotted grey;
+    width: 100px;
+    height: 20px;
+    margin: 5px;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 41%;
+}
