@@ -1,0 +1,45 @@
+#box1 {
+    font-family: 'Montserrat', sans-serif; /*Подключение шрифта*/
+    font-size: 1.5rem; /*Размер шрифта в относительных единицах*/
+    font-weight: bold; /*Жирность*/
+    line-height: 1.4; /*Межстрочный интервал*/
+    letter-spacing: 0.05em; /*Межбуквенный интервал*/
+    text-align: justify; /*Выравнивание по ширине*/
+    color: green;
+}
+.fb, .yt, .inst, .pint{
+    color: grey;
+    font-size: 50px;
+}
+.fb:hover{
+    color:#3b5998;
+}
+.yt:hover{
+    color:red;
+}
+.inst:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.pint:hover{
+    color: #BD081C;
+}
+nav a{
+    float: none;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+h1{
+    color: red;
+}
+footer{
+    height: 50px;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
