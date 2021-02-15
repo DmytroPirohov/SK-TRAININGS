@@ -1,0 +1,72 @@
+/* Верстка "Макет 1"
+.container{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.header{
+    height: 80px;
+    background-color: #afd1af;
+}
+.nav{
+    height: 50px;
+    background-color: #67be65;
+}
+.main{
+    display: flex;
+}
+.footer{
+    background-color: #afd1af;
+    height: 30px;
+}
+#sidebar, #aside{
+    background-color: #5a92d8;
+    width: 20%;
+    height: 300px;
+}
+#content{
+    background-color: #96b4da;
+    height: 300px;
+    width: 60%;
+} */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+.header, .footer{
+    clear: both;
+    background-color: #afd1af;
+    width: 100%;
+    height: 80px;
+}
+.nav{
+    height: 50px;
+    width: 100%;
+    background-color: #67be65;
+    clear: both;
+}
+.footer{
+    height: 30px;
+}
+#sidebar, #content, #aside{
+    height: 300px;
+    float: left;
+}
+#content{
+    width: 60%;
+    background-color: #96b4da;
+}
+#sidebar, #aside{
+    width: 20%;
+    background-color: #5a92d8;
+}
+
+
+
+
+

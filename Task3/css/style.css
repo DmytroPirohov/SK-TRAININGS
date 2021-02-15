@@ -1,0 +1,22 @@
+.blocklist li{
+    display: inline-block; /* Отображать как строчный элемент */
+    margin: 0 5px 5px 0;
+    border: 1px solid #000; /* Рамка вокруг текста */
+    padding-top: 20px;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    background-color: #eeeeee;
+}
+
+ul #box:nth-child(odd){
+    background-color: #ccffaa;
+}
+
+/* ul li:nth-child(3), ul li:nth-child(9){
+    background-color: #ccffaa; */
+
+
+
+
+

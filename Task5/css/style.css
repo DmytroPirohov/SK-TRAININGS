@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: lightgrey;
+}
+div{
+    width: 600px;
+    height: 200px;
+    border: red solid 2px;
+    border-radius: 7px;
+    background-color: white;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+#text1{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+hr{
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 150px;
+    height: 1px;
+    border: 0;
+    background-color: lightgrey;
+}
+#text2{
+    margin: 20px;
+    text-align: justify;
+}
+
+
+
+

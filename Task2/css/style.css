@@ -1,0 +1,31 @@
+
+ul #list1{
+    list-style-type: square;
+}  
+ul #lf:first-child{
+    font-weight: bold;
+    color: rgb(233,30,99);
+    list-style-type: square;
+}
+ul #lf:last-child{
+    color: rgb(76,175,80);
+    font-style: italic;
+    list-style-type: square;
+}
+
+/* ul li:first-child {
+    font-weight: bold;
+    color: rgb(233,30,99);
+    list-style-type: square;
+}
+ul li:last-child{
+    color: rgb(76,175,80);
+    font-style: italic;
+    list-style-type: square;
+} */
+
+
+
+
+
+
