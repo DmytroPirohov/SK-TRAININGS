@@ -11,10 +11,14 @@ div{
     border: red solid 2px;
     border-radius: 7px;
     background-color: white;
-    position: absolute;
+    /* position: absolute;
     top:50%;
     left:50%;
-    transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%); */
+    margin: auto;
+    position: absolute;
+    overflow: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
 }
 #text1{
     text-transform: uppercase;
