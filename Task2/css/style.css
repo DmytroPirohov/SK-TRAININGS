@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    position: absolute;
+    height: 100%; 
+    width: 80%;
+    left: 10%; 
+    background-color: #FFCC00;
+    border-right-color: green; /* Цвет линии справа */
+    border-right-style: solid; /* Стиль линии */
+    border-right-width: 5px; /* Толщина линии */
+    border-left-color: green; /* Цвет линии слева */
+    border-left-style: solid; /* Стиль линии */
+    border-left-width: 5px; /* Толщина линии */
+    border-radius: 20px;
+    padding: 15px;
+}

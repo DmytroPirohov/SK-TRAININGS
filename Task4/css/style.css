@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.text{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 100px;
+    font-stretch: ultra-condensed;
+    color: #61757e;
+    text-shadow: 1px 1px 5px black;
+    /* background: linear-gradient(grey, #61757e); /* Градиент для текста */
+    /* -webkit-background-clip: text; Обрезаем фон по тексту */
+    /* -webkit-text-fill-color: transparent; Прозрачный текст */ */
+}
+.text2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 100px;
+    font-stretch: ultra-condensed;
+    color: #61757e;
+    text-shadow: 10px 10px 15px black;
+}
+div{
+    width: 350px;
+    height: 200px;
+    display: inline-block;
+    background-color: #6f838c;
+    text-align: center;
+    margin-right: -4px;
+}
