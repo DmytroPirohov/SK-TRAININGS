@@ -14,7 +14,7 @@
     text-shadow: 1px 1px 5px black;
     /* background: linear-gradient(grey, #61757e); /* Градиент для текста */
     /* -webkit-background-clip: text; Обрезаем фон по тексту */
-    /* -webkit-text-fill-color: transparent; Прозрачный текст */ */
+    /* -webkit-text-fill-color: transparent; Прозрачный текст */
 }
 .text2{
     font-family: 'Bebas Neue', cursive;
