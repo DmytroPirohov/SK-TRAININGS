@@ -1,0 +1,58 @@
+$size-text: 200px;
+$color-text: grey;
+
+@mixin position-center($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: translate(-50%, -50%);
+    @if $left == 50% {
+        background-color: brown;
+    }  @else if $left == 60%{
+        color: red;
+    }
+    @else{
+        background-color: coral;
+    }
+    
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    @include position-center(50%, 60%);
+}
+.container{
+    @include position-center(50%, 50%);
+}
+
+
+
+
+div{
+    background-color: aquamarine;
+    color: $color-text;
+    font: {
+        family: sanf-serif, Arial;
+        size: $size-text;
+    }
+
+}
+
+nav{
+    position: fixed;
+    top: 300px;
+
+    ul{
+        background-color: $color-text;
+        size: 10px;
+    }
+}
+
+p{
+    color: $color-text;
+    &:hover{
+        color: red;
+    }
+}
