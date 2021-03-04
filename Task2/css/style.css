@@ -1,0 +1,119 @@
+body{
+    background: #F6F7FA;
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(5, auto) ;
+    grid-auto-flow: column;
+    gap: 64px;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+.black{
+    background: linear-gradient(90.02deg, #25335A 0.02%, #141824 113.01%);
+    width: 660px;
+    height: 184px;
+    border: none;
+    border-radius: 16px;
+    color: white;
+}
+.light{
+    background: #FFFFFF;
+    /* background: red; */
+    width: 660px;
+    height: 184px;
+    border-radius: 16px;
+    
+    color: #B65741;
+}
+
+.text{
+    display: flex;
+    align-items: flex-end;
+    margin: 72px 40px 0px;
+    
+    width: 270px;
+    height: 33px;
+    
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+}
+.time{
+    margin: 0px 40px;
+    
+    width: 263px;
+    height: 44px;
+    
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+}
+
+.item1{
+    position: absolute;
+    grid-area: 1/1;
+    top: 16.61px;
+    left: 377.02px;
+}
+.item2{
+    position: absolute;
+    grid-area: 2/1;
+    top: -20px;
+    left: 375px;
+}
+.item3{
+    position: absolute;
+    grid-area: 3/1;
+    top: -8px;
+    left: 393px;
+}
+.item4{
+    position: absolute;
+    grid-area: 4/1;
+    top: -12px;
+    left: 381px;
+}
+.item5{
+    position: absolute;
+    grid-area: 5/1;
+    top: -28px;
+    left: 354px;
+}
+
+.item6{
+    position: absolute;
+    grid-area: 1/2;
+    top: 14px;
+    left: 305px;
+}
+.item7{
+    position: absolute;
+    grid-area: 2/2;
+    top: -3px;
+    left: 354px;
+}
+.item8{
+    position: absolute;
+    grid-area: 3/2;
+    top: -3px;
+    left: 375px;
+}
+.item9{
+    position: absolute;
+    grid-area: 4/2;
+    top: -12px;
+    left: 396px;
+}
+.item10{
+    position: absolute;
+    grid-area: 5/2;
+    top: -24px;
+    left: 338px;
+}
