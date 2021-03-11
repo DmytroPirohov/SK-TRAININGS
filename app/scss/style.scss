@@ -1,16 +1,14 @@
-@function setcolor($clr) {
-    @return $clr;
+.row{
+    background-color: lightblue;
+    border: 10px solid yellow;
+    height: 200px;
 }
 
-div{
-    background-color: setcolor(grey);
+.col{
+    margin: 10px;
+    border: 1px solid rgb(201, 34, 34) !important;
+    background-color: tomato;
+    border-radius: 50%;
 }
-
-@for $i from 1 through 12 {
-    .cox-lg-#{$i} {width: 50 + $i;}    
-}
-
-//CYCLE EACH
-
 
 
