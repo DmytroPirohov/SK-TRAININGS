@@ -1,9 +1,12 @@
 const { src, dest, parallel, series, watch } = require("gulp");
 const browserSync = require("browser-sync").create();
+
 // Подключаем модули gulp-sass
 const sass = require("gulp-sass");
+
 // Подключаем Autoprefixer
 const autoprefixer = require("gulp-autoprefixer");
+
 // Подключаем модуль gulp-clean-css
 const cleancss = require("gulp-clean-css");
 const concat = require("gulp-concat");
@@ -72,9 +75,9 @@ function buildcopy() {
 // Экспортируем функцию styles() в таск styles
 exports.styles = styles;
 exports.browsersync = browsersync;
-// exports.images = images;
+exports.images = images;
 exports.cleanimg = cleanimg;
-// exports.cleandist = cleandist;
+exports.cleandist = cleandist;
 
 exports.default = parallel(browsersync, startWatch);
 exports.build = series(cleandist, cleanimg, styles, images, buildcopy);
