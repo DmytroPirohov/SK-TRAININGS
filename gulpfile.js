@@ -54,9 +54,9 @@ const newer = require("gulp-newer");
 const del = require("del");
 
 //Очистка папки изображений
-function cleanimg() {
-  return del("app/images/dest/**/*", { force: true });
-}
+// function cleanimg() {
+//   return del("app/images/dest/**/*", { force: true });
+// }
 
 //Финальная сборка проекта для разработчика
 function buildcopy() {
@@ -77,4 +77,5 @@ exports.cleanimg = cleanimg;
 exports.cleandist = cleandist;
 
 exports.default = parallel(browsersync, startWatch);
-exports.build = series(cleandist, cleanimg, styles, images, buildcopy);
+// exports.build = series(cleandist, cleanimg, styles, images, buildcopy);
+exports.build = series(cleandist, styles, images, buildcopy);
