@@ -64,17 +64,17 @@ function buildcopy() {
     base: "app",
   }).pipe(dest("dist"));
 }
- //Очистка Clean Dist для обнуления папки, чтобы клиенту все пошло так как надо
- function cleandist() {
+//Очистка Clean Dist для обнуления папки, чтобы клиенту все пошло так как надо
+function cleandist() {
   return del("dist/**/*", { force: true });
 }
 
 // Экспортируем функцию styles() в таск styles
 exports.styles = styles;
 exports.browsersync = browsersync;
-// exports.images = images;
+exports.images = images;
 exports.cleanimg = cleanimg;
-// exports.cleandist = cleandist;
+exports.cleandist = cleandist;
 
 exports.default = parallel(browsersync, startWatch);
 exports.build = series(cleandist, cleanimg, styles, images, buildcopy);
