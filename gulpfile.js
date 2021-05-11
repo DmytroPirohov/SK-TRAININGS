@@ -9,7 +9,6 @@ const autoprefixer = require("gulp-autoprefixer");
 
 // Подключаем модуль gulp-clean-css
 const cleancss = require("gulp-clean-css");
-const concat = require("gulp-concat");
 
 function browsersync() {
   browserSync.init({
@@ -22,6 +21,7 @@ function startWatch() {
   watch("app/**/*.scss", styles);
   watch("app/**/*.html").on("change", browserSync.reload);
   watch("app/images/src/**/*", images);
+  watch(["app/**/*.js", "!app/**/*.min.js"], scripts);
 }
 
 function styles() {
@@ -55,6 +55,19 @@ const imagemin = require("gulp-imagemin");
 const newer = require("gulp-newer");
 // Подключаем модуль del
 const del = require("del");
+//Подключаем gulp-concat
+const concat = require("gulp-concat");
+// Подключаем gulp-uglify-es
+const uglify = require("gulp-uglify-es").default;
+//Подключение js
+
+function scripts() {
+  return src(["node_modules/jquery/dist/jquery.min.js", "app/js/script.js"])
+    .pipe(concat("script.min.js"))
+    .pipe(uglify())
+    .pipe(dest("app/js/"))
+    .pipe(browserSync.stream());
+}
 
 //Очистка папки изображений
 function cleanimg() {
@@ -63,21 +76,30 @@ function cleanimg() {
 
 //Финальная сборка проекта для разработчика
 function buildcopy() {
-  return src(["app/images/dest/**/*", "app/css/*.min.css", "app/**/*.html"], {
-    base: "app",
-  }).pipe(dest("dist"));
+  return src(
+    [
+      "app/images/dest/**/*",
+      "app/css/*.min.css",
+      "app/js/*.min.js",
+      "app/**/*.html",
+    ],
+    {
+      base: "app",
+    }
+  ).pipe(dest("dist"));
 }
- //Очистка Clean Dist для обнуления папки, чтобы клиенту все пошло так как надо
- function cleandist() {
+//Очистка Clean Dist для обнуления папки, чтобы клиенту все пошло так как надо
+function cleandist() {
   return del("dist/**/*", { force: true });
 }
 
 // Экспортируем функцию styles() в таск styles
 exports.styles = styles;
 exports.browsersync = browsersync;
+exports.scripts = scripts;
 exports.images = images;
 exports.cleanimg = cleanimg;
-exports.cleandist = cleandist;
+// exports.cleandist = cleandist;
 
 exports.default = parallel(browsersync, startWatch);
-exports.build = series(cleandist, cleanimg, styles, images, buildcopy);
+exports.build = series(cleandist, cleanimg, styles, scripts, images, buildcopy);
